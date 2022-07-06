@@ -17,7 +17,7 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 4. `clangd` <br>
     **简介** LLVM用于C/C++的LSP服务器——clangd的VSCode支持插件
 
-### Git Configure
+### Git配置
 1. 安装Git。
 2. 将Git添加到系统环境变量，或者按照步骤3操作。
 3. 手动将已经安装的Git的绝对路径写入VSCode的`Git: Path`（可以直接在settings.json中添加或修改`git.path`属性）。
