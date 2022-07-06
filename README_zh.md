@@ -29,7 +29,7 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 2. 为VSCode安装`clangd`拓展插件。
 3. 在拓展插件`clangd`的配置中设置`Clangd: Path`为`$LLVM_ROOT\bin\clangd.exe`（即安装的clangd可执行文件的绝对路径）。
 4. 编辑VSCode的`settings.json`文件，加入以下内容（必要时可去除所给内容中的注释）。
-``` json
+``` js
 "clangd.arguments": [
     //! 在后台执行索引工作
     "--background-index",
@@ -49,7 +49,7 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
     "--header-insertion=iwyu",
     //! 允许缓存预编译头文件
     "--pch-storage=disk",
-],
+]
 ```
 1. 在工作环境根目录创建`.clangd`并如下编辑（或自行调整）以细化`clangd`的配置（访问[官网](https://clangd.llvm.org)以获取更多信息）。
 ```yaml

@@ -30,7 +30,7 @@ Take many factors into consideration, my solution to LSP server is to install an
 2. Install `clangd` extension for vscode.
 3. Open settings of extension `clangd`, set `Clangd: Path` to `$LLVM_ROOT\bin\clangd.exe` (type absolute path of clangd.exe here).
 4. Modify `settings.json` of VSCode, append content as below.
-``` json
+``` js
 "clangd.arguments": [
     //! perform indexing jobs in the background
     "--background-index",
@@ -50,7 +50,7 @@ Take many factors into consideration, my solution to LSP server is to install an
     "--header-insertion=iwyu",
     //! enable PCHs storage to imporve performance
     "--pch-storage=disk",
-],
+]
 ```
 5. Create `.clangd` file at the root path of workspace or at, edit as below or whatever you want, for more information, browser [official site of clangd](https://clangd.llvm.org).
 ```yaml
