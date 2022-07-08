@@ -1,0 +1,7 @@
+# @file .clangd 
+# @brief configure details for clangd
+
+CompileFlags:
+    Add: -std=c++2b         # enable c++23 features
+Diagnostics:
+    UnusedIncludes: Strict  # mark unused headers

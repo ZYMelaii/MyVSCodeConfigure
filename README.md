@@ -29,38 +29,47 @@ Take many factors into consideration, my solution to LSP server is to install an
 1. Download latest LLVM released binaries from [official site](https://releases.llvm.org/) or manually build the projects from source code, install them to a propriate folder (marked as `$LLVM_ROOT`) afterwards.
 2. Install `clangd` extension for vscode.
 3. Open settings of extension `clangd`, set `Clangd: Path` to `$LLVM_ROOT\bin\clangd.exe` (type absolute path of clangd.exe here).
-4. Modify `settings.json` of VSCode, append content as below.
-``` js
-"clangd.arguments": [
-    //! perform indexing jobs in the background
-    "--background-index",
-    //! specific path to find compile_commands.json [optional]
-    "--compile-commands-dir=build",
-    //! number of parallel running jobs
-    "-j=8",
-    //! enable clang-tidy
-    "--clang-tidy",
-    //! enable clang-tidy to check that target performance-related issues and that target bug-prone code constructs. (browser `https://clang.llvm.org/extra/clang-tidy/` for more information)
-    "--clang-tidy-checks=performance-*,bugprone-*",
-    //! enable code completion automatically include index symbols that are not defined in the scopes
-    "--all-scopes-completion",
-    //! specific granularity of code completion suggestions
-    "--completion-style=detailed",
-    //! add #include directives when accepting code completions
-    "--header-insertion=iwyu",
-    //! enable PCHs storage to imporve performance
-    "--pch-storage=disk",
-]
-```
-5. Create `.clangd` file at the root path of workspace or at, edit as below or whatever you want, for more information, browser [official site of clangd](https://clangd.llvm.org).
-```yaml
-###
-# @file .clangd
-# @brief configuration details for clangd
-###
-CompileFlags:
-    Add: -std=c++20         # enable C++20 features
-Diagnostics:
-    UnusedIncludes: Strict  # mark unused headers
-```
+4. Modify `settings.json` of VSCode, append content as [`clangd.cfg`](./config/clangd.cfg).
+5. Create `.clangd` file at the root path of workspace or at, edit as [`.clangd`](./config/.clangd) or whatever you want, for more information, browser [official site of clangd](https://clangd.llvm.org).
 6. Enjoy yourself.
+
+### Snippet Configure
+- [C](./config/c.json)
+- [C++](./config/cpp.json)
+
+### Keybinding Configure
+#### `Rebinded Commands`
+- ★★★★★ `editor.action.blockComment``"ctrl+shift+/"`
+- ★★★★★ `editor.action.insertCursorAtEndOfEachLineSelected` `"ctrl+shift+l"`
+- ★★★★★ `editor.action.selectHighlights` `"shift+alt+d"`
+- ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."`
+- ★★★★★ `editor.action.moveLinesUpAction` `"ctrl+shift+up"`
+- ★★★★★ `editor.action.moveLinesDownAction``"ctrl+shift+down"`
+- ★★★★☆ `workbench.action.toggleSidebarVisibility` `"ctrl+alt+b"`
+- ★★★★☆ `editor.action.quickFix` `"ctrl+shift+."`
+- ★★★☆☆ `selectAllSearchEditorMatches` `"shift+alt+d"`
+- ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"`
+#### `Removed Commands`
+- notebook.cell.detectLanguage
+- editor.action.formatSelection
+- editor.detectLanguage
+- editor.action.toggleTabFocusMode
+- editor.toggleFold
+- editor.action.removeCommentLine
+- editor.action.inPlaceReplace.up
+- workbench.action.files.saveWithoutFormatting
+- editor.action.copyLinesUpAction
+- editor.action.copyLinesDownAction
+- editor.action.insertCursorAbove
+- editor.action.insertCursorBelow
+- editor.action.autoFix
+- clangd.typeHierarchy
+- breadcrumbs.toggleToOn
+- cursorColumnSelectDown
+- cursorColumnSelectLeft
+- cursorColumnSelectPageDown
+- cursorColumnSelectPageUp
+- cursorColumnSelectRight
+- cursorColumnSelectUp
+- problems.action.showQuickFixes
+- workbench.action.openSettings

@@ -5,9 +5,9 @@
 			"int main(int argc, char *argv[]) {",
 			"\t${1:// TODO}",
 			"\treturn 0;",
-			"}",
+			"}"
 		],
-		"description": "quick program entry `main`",
+		"description": "quick program entry `main`"
 	},
 	"Win32 program entry": {
 		"prefix": "winmain",
@@ -16,9 +16,9 @@
 			"int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pCmdLine, int nCmdShow) {",
 			"\t${1:// TODO}",
 			"\treturn 0;",
-			"}",
+			"}"
 		],
-		"description": "quick program entry `WinMain`",
+		"description": "quick program entry `WinMain`"
 	},
 	"Dll program entry": {
 		"prefix": "dllmain",
@@ -47,17 +47,17 @@
             "\t\t}",
             "\t}",
             "\treturn TRUE;",
-            "}",
+            "}"
 		],
-		"description": "quick program entry `DllMain`",
+		"description": "quick program entry `DllMain`"
 	},
 	"Trivial for-statement": {
 		"prefix": "for",
 		"body": [
 			"for (int ${1:i} = ${2:0}; ${1:i} < ${3:n}; ++${1:i}) {",
 			"\t${4:// TODO}",
-			"}",
+			"}"
 		],
 		"description": "ordinary for statement"
-	},
+	}
 }

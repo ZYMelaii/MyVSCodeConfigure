@@ -28,40 +28,8 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 1. 从LLVM的[官网](https://releases.llvm.org/)下载最新版的二进制发行文件或手动从项目源码编译，完成后将其安装到一个合适的目录中(此处记为 `$LLVM_ROOT`) 。
 2. 为VSCode安装`clangd`拓展插件。
 3. 在拓展插件`clangd`的配置中设置`Clangd: Path`为`$LLVM_ROOT\bin\clangd.exe`（即安装的clangd可执行文件的绝对路径）。
-4. 编辑VSCode的`settings.json`文件，加入以下内容（必要时可去除所给内容中的注释）。
-``` js
-"clangd.arguments": [
-    //! 在后台执行索引工作
-    "--background-index",
-    //! 指定依赖的clangd依赖的compile_commands.json所在的目录（可选）
-    "--compile-commands-dir=build",
-    //! 并行运行数目
-    "-j=8",
-    //! 启用clang-tidy
-    "--clang-tidy",
-    //! 指定clang-tidy检查目标文件与性能相关的条目及有错误编码倾向的编码块（访问官网`https://clang.llvm.org/extra/clang-tidy/`以获取更多信息）
-    "--clang-tidy-checks=performance-*,bugprone-*",
-    //! 若目标不存在的话，允许从代码补全中自动插入符号所属的索引域（如头文件）
-    "--all-scopes-completion",
-    //! 指定补全提示风格
-    "--completion-style=detailed",
-    //! 当应用代码补全的时候，允许插入#include引导
-    "--header-insertion=iwyu",
-    //! 允许缓存预编译头文件
-    "--pch-storage=disk",
-]
-```
-1. 在工作环境根目录创建`.clangd`并如下编辑（或自行调整）以细化`clangd`的配置（访问[官网](https://clangd.llvm.org)以获取更多信息）。
-```yaml
-###
-# @file .clangd
-# @brief configuration details for clangd
-###
-CompileFlags:
-    Add: -std=c++2b         # 启用C++23标准
-Diagnostics:
-    UnusedIncludes: Strict  # 标记未被使用的头文件
-```
+4. 编辑VSCode的`settings.json`文件，参照[`clangd.cfg`](./config/clangd.cfg)附加相关内容（必要时可去除所给内容中的注释）。
+5. 在工作环境根目录创建[`.clangd`](./config/.clangd)并依参照编辑（或自行调整）以细化`clangd`的配置（访问[官网](https://clangd.llvm.org)以获取更多信息）。
 
 ### Snippet配置（个人偏好）
 - [C片段](./config/c.json)
@@ -72,9 +40,10 @@ Diagnostics:
 - ★★★★★ `切换块注释` `"ctrl+shift+/"` `editor.action.blockComment`
 - ★★★★★ `在行尾添加光标` `"ctrl+shift+l"` `editor.action.insertCursorAtEndOfEachLineSelected`
 - ★★★★★ `选择所有找到的查找匹配项` `"shift+alt+d"` `editor.action.selectHighlights`
-- ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."` `breadcrumbs.focusAndSelec`
+- ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."` `breadcrumbs.focusAndSelect`
 - ★★★★★ `向上移动行` `"ctrl+shift+up"` `editor.action.moveLinesUpAction`
 - ★★★★★ `向下移动行` `"ctrl+shift+down"` `editor.action.moveLinesDownAction`
+- ★★★★☆ `视图: 切换主侧栏可见性` `"ctrl+alt+b"` `workbench.action.toggleSidebarVisibility`
 - ★★★★☆ `快速修复` `"ctrl+shift+."` `editor.action.quickFix`
 - ★★★☆☆ `搜索编辑器: 选择所有匹配项` `"shift+alt+d"` `selectAllSearchEditorMatches`
 - ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"` `addCursorsAtSearchResults`
