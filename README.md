@@ -32,13 +32,13 @@ Take many factors into consideration, my solution to LSP server is to install an
 1. Download latest LLVM released binaries from [official site](https://releases.llvm.org/) or manually build the projects from source code, install them to a propriate folder (marked as `$LLVM_ROOT`) afterwards.
 2. Install `clangd` extension for vscode.
 3. Open settings of extension `clangd`, set `Clangd: Path` to `$LLVM_ROOT\bin\clangd.exe` (type absolute path of clangd.exe here).
-4. Modify `settings.json` of VSCode, append content as [`clangd.cfg`](./config/clangd.cfg).
-5. Create `.clangd` file at the root path of workspace or at, edit as [`.clangd`](./config/.clangd) or whatever you want, for more information, browser [official site of clangd](https://clangd.llvm.org).
-6. For global configuration, edit and put the config file [`clangd/config.yaml`](./config/config.yaml) into the user directory (defaultly `%USERPROFILE%/AppData/Local` on Windows) according to the help information provided by `clangd`. In addition, relevant config files `.clang-tidy`/`.clang-format` for `clang-tidy`/`clang-format` can be put into the root path of any workspace to implement global configuration.
+4. Modify `settings.json` of VSCode, append content as [`clangd.cfg`](./config/clangd/clangd.cfg).
+5. Create `.clangd` file at the root path of workspace or at, edit as [`.clangd`](./config/clangd/.clangd) or whatever you want, for more information, browser [official site of clangd](https://clangd.llvm.org).
+6. For global configuration, edit and put the config file [`clangd/config.yaml`](./config/clangd/config.yaml) into the user directory (defaultly `%USERPROFILE%/AppData/Local` on Windows) according to the help information provided by `clangd`. In addition, relevant config files `.clang-tidy`/`.clang-format` for `clang-tidy`/`clang-format` can be put into the root path of any workspace to implement global configuration.
 
 ### Snippet Configure
-- [C](./config/c.json)
-- [C++](./config/cpp.json)
+- [C](./config/snippet/c.json)
+- [C++](./config/snippet/cpp.json)
 
 ### Keybinding Configure
 #### `Rebinded Commands`

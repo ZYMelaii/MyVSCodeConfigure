@@ -32,13 +32,13 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 1. 从LLVM的[官网](https://releases.llvm.org/)下载最新版的二进制发行文件或手动从项目源码编译，完成后将其安装到一个合适的目录中(此处记为 `$LLVM_ROOT`) 。
 2. 为VSCode安装`clangd`拓展插件。
 3. 在拓展插件`clangd`的配置中设置`Clangd: Path`为`$LLVM_ROOT\bin\clangd.exe`（即安装的clangd可执行文件的绝对路径）。
-4. 编辑VSCode的`settings.json`文件，参照[`clangd.cfg`](./config/clangd.cfg)附加相关内容（必要时可去除所给内容中的注释）。
-5. 在工作环境根目录创建[`.clangd`](./config/.clangd)并依参照编辑（或自行调整）以细化`clangd`的配置（访问[官网](https://clangd.llvm.org)以获取更多信息）。
-6. 若需要在全局配置`clangd`，依据`clangd`帮助信息的指导在用户目录（Windows平台下为`%USERPROFILE%/AppData/Local`）编辑[`clangd/config.yaml`](./config/config.yaml)作为`clangd`的配置信息。其中`clangd`将在当前工作目录及工作目录的任意级别父目录搜索`clang-tidy`/`clang-format`的配置文件`.clang-tidy`/`.clang-format`的配置文件，若需要为其添加全局配置，可尝试在工作目录的父级根目录编辑添加配置文件。
+4. 编辑VSCode的`settings.json`文件，参照[`clangd.cfg`](./config/clangd/clangd.cfg)附加相关内容（必要时可去除所给内容中的注释）。
+5. 在工作环境根目录创建[`.clangd`](./config/clangd/.clangd)并依参照编辑（或自行调整）以细化`clangd`的配置（访问[官网](https://clangd.llvm.org)以获取更多信息）。
+6. 若需要在全局配置`clangd`，依据`clangd`帮助信息的指导在用户目录（Windows平台下为`%USERPROFILE%/AppData/Local`）编辑[`clangd/config.yaml`](./config/clangd/config.yaml)作为`clangd`的配置信息。其中`clangd`将在当前工作目录及工作目录的任意级别父目录搜索`clang-tidy`/`clang-format`的配置文件`.clang-tidy`/`.clang-format`的配置文件，若需要为其添加全局配置，可尝试在工作目录的父级根目录编辑添加配置文件。
 
 ### Snippet配置（个人偏好）
-- [C片段](./config/c.json)
-- [C++片段](./config/cpp.json)
+- [C片段](./config/snippet/c.json)
+- [C++片段](./config/snippet/cpp.json)
 
 ### 快捷键绑定（个人偏好）
 #### `重新绑定的命令`
