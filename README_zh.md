@@ -71,3 +71,12 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 - cursorColumnSelectUp
 - problems.action.showQuickFixes
 - workbench.action.openSettings
+#### `推荐的命令`
+- `触发建议` `"ctrl+i"` `editor.action.triggerSuggest`
+- `裁剪尾随空格` `"ctrl+k ctrl+x"` `editor.action.trimTrailingWhitespace`
+- `在下面插入行` `"ctrl+enter"` `editor.action.insertLineAfter`
+- `在上面插入行` `ctrl+shift+enter` `editor.action.insertLineBefore`
+- `格式化文档` `"shift+alt+f"` `editor.action.formatDocument`
+- `更改语言模式` `"ctrl+k m"` `workbench.action.editor.changeLanguageMode`
+- `视图: 切换面板可见性` `"ctrl+j"` `workbench.action.togglePanel`
+- `视图: 切换 终端` `ctrl+&#96;` `workbench.action.terminal.toggleTerminal`
