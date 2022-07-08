@@ -39,12 +39,12 @@ Take many factors into consideration, my solution to LSP server is to install an
 
 ### Keybinding Configure
 #### `Rebinded Commands`
-- ★★★★★ `editor.action.blockComment``"ctrl+shift+/"`
+- ★★★★★ `editor.action.blockComment` `"ctrl+shift+/"`
 - ★★★★★ `editor.action.insertCursorAtEndOfEachLineSelected` `"ctrl+shift+l"`
 - ★★★★★ `editor.action.selectHighlights` `"shift+alt+d"`
 - ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."`
 - ★★★★★ `editor.action.moveLinesUpAction` `"ctrl+shift+up"`
-- ★★★★★ `editor.action.moveLinesDownAction``"ctrl+shift+down"`
+- ★★★★★ `editor.action.moveLinesDownAction` `"ctrl+shift+down"`
 - ★★★★☆ `workbench.action.toggleSidebarVisibility` `"ctrl+alt+b"`
 - ★★★★☆ `editor.action.quickFix` `"ctrl+shift+."`
 - ★★★☆☆ `selectAllSearchEditorMatches` `"shift+alt+d"`
