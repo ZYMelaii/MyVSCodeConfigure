@@ -16,6 +16,10 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
     **简介** Markdown集成拓展包（支持热键、表格、自动预览等）
 4. `clangd` <br>
     **简介** LLVM用于C/C++的LSP服务器——clangd的VSCode支持插件
+5. `CMake Tools` <br>
+    **简介** CMake支持及其拓展
+6. `Bookmarks` <br>
+    **简介** 书签标记及跳转支持
 
 ### Git配置
 1. 安装Git。
@@ -30,6 +34,7 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 3. 在拓展插件`clangd`的配置中设置`Clangd: Path`为`$LLVM_ROOT\bin\clangd.exe`（即安装的clangd可执行文件的绝对路径）。
 4. 编辑VSCode的`settings.json`文件，参照[`clangd.cfg`](./config/clangd.cfg)附加相关内容（必要时可去除所给内容中的注释）。
 5. 在工作环境根目录创建[`.clangd`](./config/.clangd)并依参照编辑（或自行调整）以细化`clangd`的配置（访问[官网](https://clangd.llvm.org)以获取更多信息）。
+6. 若需要在全局配置`clangd`，依据`clangd`帮助信息的指导在用户目录（Windows平台下为`%USERPROFILE%/AppData/Local`）编辑[`clangd/config.yaml`](./config/config.yaml)作为`clangd`的配置信息。其中`clangd`将在当前工作目录及工作目录的任意级别父目录搜索`clang-tidy`/`clang-format`的配置文件`.clang-tidy`/`.clang-format`的配置文件，若需要为其添加全局配置，可尝试在工作目录的父级根目录编辑添加配置文件。
 
 ### Snippet配置（个人偏好）
 - [C片段](./config/c.json)

@@ -1,4 +1,4 @@
-# @file .clangd 
+# @file config.yaml
 # @brief configure details for clangd
 
 CompileFlags:

@@ -16,12 +16,15 @@ PS: replace official download server `az764295.vo.msecnd.net` (or anything else 
     **brief** All you need to write Markdown (keyboard shortcuts, table of contents, auto preview)
 4. `clangd` <br>
     **brief** C/C++ completion, navigation and insights based on clangd (LSP project of LLVM)
+5. `CMake Tools` <br>
+    **brief** CMake language with extension support
+6. `Bookmarks` <br>
+    **brief** Mark lines and jump to them
 
 ### Git Configure
 1. Install `Git` for yourself.
 2. Add `Git` to system PATH or turn to 3.
 3. Mannually set `Git: Path` to the abosulte path of your Git in VSCode.
-4. Enjoy yourself.
 
 ### Language Server Protocol Configure
 Take many factors into consideration, my solution to LSP server is to install and configure clangd of LLVM project for VSCode.
@@ -31,7 +34,7 @@ Take many factors into consideration, my solution to LSP server is to install an
 3. Open settings of extension `clangd`, set `Clangd: Path` to `$LLVM_ROOT\bin\clangd.exe` (type absolute path of clangd.exe here).
 4. Modify `settings.json` of VSCode, append content as [`clangd.cfg`](./config/clangd.cfg).
 5. Create `.clangd` file at the root path of workspace or at, edit as [`.clangd`](./config/.clangd) or whatever you want, for more information, browser [official site of clangd](https://clangd.llvm.org).
-6. Enjoy yourself.
+6. For global configuration, edit and put the config file [`clangd/config.yaml`](./config/config.yaml) into the user directory (defaultly `%USERPROFILE%/AppData/Local` on Windows) according to the help information provided by `clangd`. In addition, relevant config files `.clang-tidy`/`.clang-format` for `clang-tidy`/`clang-format` can be put into the root path of any workspace to implement global configuration.
 
 ### Snippet Configure
 - [C](./config/c.json)
