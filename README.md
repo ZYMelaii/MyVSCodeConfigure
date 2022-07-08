@@ -86,7 +86,6 @@ Take many factors into consideration, my solution to LSP server is to install an
 - `workbench.action.togglePanel` `"ctrl+j"` 
 - `workbench.action.terminal.toggleTerminal` `"ctrl+backtick"`
 - `workbench.action.terminal.new` `"ctrl+shift+backtick"`
-- `workbench.action.editor.changeLanguageMode` `"ctrl+k m"`
 - `workbench.action.closeFolder` `"ctrl+k f"` 
 - `editor.action.refactor` `"ctrl+shift+r"` 
 - `workbench.action.quickOpen` `"ctrl+p"` 

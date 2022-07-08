@@ -84,7 +84,6 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 - `视图: 切换面板可见性` `"ctrl+j"` `workbench.action.togglePanel`
 - `视图: 切换 终端` `"ctrl+backtick"` `workbench.action.terminal.toggleTerminal`
 - `终端: 创建新的终端` `"ctrl+shift+backtick"` `workbench.action.terminal.new`
-- `更改语言模式` `"ctrl+k m"` `workbench.action.editor.changeLanguageMode`
 - `工作区: 关闭工作区` `"ctrl+k f"` `workbench.action.closeFolder`
 - `重构...` `"ctrl+shift+r"` `editor.action.refactor`
 - `转到文件...` `"ctrl+p"` `workbench.action.quickOpen`
