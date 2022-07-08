@@ -43,8 +43,10 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 - ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."` `breadcrumbs.focusAndSelect`
 - ★★★★★ `向上移动行` `"ctrl+shift+up"` `editor.action.moveLinesUpAction`
 - ★★★★★ `向下移动行` `"ctrl+shift+down"` `editor.action.moveLinesDownAction`
-- ★★★★☆ `视图: 切换主侧栏可见性` `"ctrl+alt+b"` `workbench.action.toggleSidebarVisibility`
+- ★★★★☆ `转换为大写` `"ctrl+k ctrl+u"` `editor.action.transformToUppercase`
+- ★★★★☆ `转换为小写` `"ctrl+k ctrl+l"` `editor.action.transformToLowercase`
 - ★★★★☆ `快速修复` `"ctrl+shift+."` `editor.action.quickFix`
+- ★★★★☆ `视图: 切换主侧栏可见性` `"ctrl+alt+b"` `workbench.action.toggleSidebarVisibility`
 - ★★★☆☆ `搜索编辑器: 选择所有匹配项` `"shift+alt+d"` `selectAllSearchEditorMatches`
 - ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"` `addCursorsAtSearchResults`
 #### `删除的命令`
@@ -71,3 +73,22 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 - cursorColumnSelectUp
 - problems.action.showQuickFixes
 - workbench.action.openSettings
+#### `推荐的命令（除却上述命令）`
+- `触发建议` `"ctrl+i"` `editor.action.triggerSuggest`
+- `将下一个查找匹配项添加到选择` `"ctrl+d"` `editor.action.addSelectionToNextFindMatch`
+- `裁剪尾随空格` `"ctrl+k ctrl+x"` `editor.action.trimTrailingWhitespace`
+- `在下面插入行` `"ctrl+enter"` `editor.action.insertLineAfter`
+- `在上面插入行` `ctrl+shift+enter` `editor.action.insertLineBefore`
+- `格式化文档` `"shift+alt+f"` `editor.action.formatDocument`
+- `更改语言模式` `"ctrl+k m"` `workbench.action.editor.changeLanguageMode`
+- `视图: 切换面板可见性` `"ctrl+j"` `workbench.action.togglePanel`
+- `视图: 切换 终端` `"ctrl+backtick"` `workbench.action.terminal.toggleTerminal`
+- `终端: 创建新的终端` `"ctrl+shift+backtick"` `workbench.action.terminal.new`
+- `更改语言模式` `"ctrl+k m"` `workbench.action.editor.changeLanguageMode`
+- `工作区: 关闭工作区` `"ctrl+k f"` `workbench.action.closeFolder`
+- `重构...` `"ctrl+shift+r"` `editor.action.refactor`
+- `转到文件...` `"ctrl+p"` `workbench.action.quickOpen`
+- `显示所有命令` `"ctrl+shift+p"` `workbench.action.showCommands`
+- `转到行/列...` `"ctrl+g"` `workbench.action.gotoLine`
+- `文件: 打开最近的文件…` `"ctrl+r"` `workbench.action.openRecent`
+- `Markdown: 打开侧边预览` `"ctrl+k v"` `markdown.showPreviewToSide`

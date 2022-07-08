@@ -45,8 +45,10 @@ Take many factors into consideration, my solution to LSP server is to install an
 - ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."`
 - ★★★★★ `editor.action.moveLinesUpAction` `"ctrl+shift+up"`
 - ★★★★★ `editor.action.moveLinesDownAction` `"ctrl+shift+down"`
-- ★★★★☆ `workbench.action.toggleSidebarVisibility` `"ctrl+alt+b"`
 - ★★★★☆ `editor.action.quickFix` `"ctrl+shift+."`
+- ★★★★☆ `editor.action.transformToUppercase` `"ctrl+k ctrl+u"`
+- ★★★★☆ `editor.action.transformToLowercase` `"ctrl+k ctrl+l"`
+- ★★★★☆ `workbench.action.toggleSidebarVisibility` `"ctrl+alt+b"`
 - ★★★☆☆ `selectAllSearchEditorMatches` `"shift+alt+d"`
 - ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"`
 #### `Removed Commands`
@@ -73,3 +75,22 @@ Take many factors into consideration, my solution to LSP server is to install an
 - cursorColumnSelectUp
 - problems.action.showQuickFixes
 - workbench.action.openSettings
+#### `Recommended Commands (except for cmds above)`
+- `editor.action.triggerSuggest` `"ctrl+i"` 
+- `editor.action.addSelectionToNextFindMatch` `"ctrl+d"` 
+- `editor.action.trimTrailingWhitespace` `"ctrl+k ctrl+x"` 
+- `editor.action.insertLineAfter` `"ctrl+enter"` 
+- `editor.action.insertLineBefore` `ctrl+shift+enter` 
+- `editor.action.formatDocument` `"shift+alt+f"` 
+- `workbench.action.editor.changeLanguageMode` `"ctrl+k m"`
+- `workbench.action.togglePanel` `"ctrl+j"` 
+- `workbench.action.terminal.toggleTerminal` `"ctrl+backtick"`
+- `workbench.action.terminal.new` `"ctrl+shift+backtick"`
+- `workbench.action.editor.changeLanguageMode` `"ctrl+k m"`
+- `workbench.action.closeFolder` `"ctrl+k f"` 
+- `editor.action.refactor` `"ctrl+shift+r"` 
+- `workbench.action.quickOpen` `"ctrl+p"` 
+- `workbench.action.showCommands` `"ctrl+shift+p"` 
+- `workbench.action.gotoLine` `"ctrl+g"` 
+- `workbench.action.openRecent` `"ctrl+r"` 
+- `markdown.showPreviewToSide` `"ctrl+k v"`
