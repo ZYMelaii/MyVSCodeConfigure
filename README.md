@@ -59,8 +59,49 @@ Take many factors into consideration, my solution to LSP server is to install an
 # @brief configuration details for clangd
 ###
 CompileFlags:
-    Add: -std=c++20         # enable C++20 features
+    Add: -std=c++2b         # enable C++23 features
 Diagnostics:
     UnusedIncludes: Strict  # mark unused headers
 ```
 6. Enjoy yourself.
+
+### Snippet Configure
+- [C](./config/c.json)
+- [C++](./config/cpp.json)
+
+### Keybinding Configure
+#### `Rebinded Commands`
+- ★★★★★ `editor.action.blockComment``"ctrl+shift+/"`
+- ★★★★★ `editor.action.insertCursorAtEndOfEachLineSelected` `"ctrl+shift+l"`
+- ★★★★★ `editor.action.selectHighlights` `"shift+alt+d"`
+- ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."`
+- ★★★★★ `editor.action.moveLinesUpAction` `"ctrl+shift+up"`
+- ★★★★★ `editor.action.moveLinesDownAction``"ctrl+shift+down"`
+- ★★★★☆ `workbench.action.toggleSidebarVisibility` `"ctrl+alt+b"`
+- ★★★★☆ `editor.action.quickFix` `"ctrl+shift+."`
+- ★★★☆☆ `selectAllSearchEditorMatches` `"shift+alt+d"`
+- ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"`
+#### `Removed Commands`
+- notebook.cell.detectLanguage
+- editor.action.formatSelection
+- editor.detectLanguage
+- editor.action.toggleTabFocusMode
+- editor.toggleFold
+- editor.action.removeCommentLine
+- editor.action.inPlaceReplace.up
+- workbench.action.files.saveWithoutFormatting
+- editor.action.copyLinesUpAction
+- editor.action.copyLinesDownAction
+- editor.action.insertCursorAbove
+- editor.action.insertCursorBelow
+- editor.action.autoFix
+- clangd.typeHierarchy
+- breadcrumbs.toggleToOn
+- cursorColumnSelectDown
+- cursorColumnSelectLeft
+- cursorColumnSelectPageDown
+- cursorColumnSelectPageUp
+- cursorColumnSelectRight
+- cursorColumnSelectUp
+- problems.action.showQuickFixes
+- workbench.action.openSettings

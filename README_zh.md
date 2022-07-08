@@ -72,9 +72,10 @@ Diagnostics:
 - ★★★★★ `切换块注释` `"ctrl+shift+/"` `editor.action.blockComment`
 - ★★★★★ `在行尾添加光标` `"ctrl+shift+l"` `editor.action.insertCursorAtEndOfEachLineSelected`
 - ★★★★★ `选择所有找到的查找匹配项` `"shift+alt+d"` `editor.action.selectHighlights`
-- ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."` `breadcrumbs.focusAndSelec`
+- ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."` `breadcrumbs.focusAndSelect`
 - ★★★★★ `向上移动行` `"ctrl+shift+up"` `editor.action.moveLinesUpAction`
 - ★★★★★ `向下移动行` `"ctrl+shift+down"` `editor.action.moveLinesDownAction`
+- ★★★★☆ `视图: 切换主侧栏可见性` `"ctrl+alt+b"` `workbench.action.toggleSidebarVisibility`
 - ★★★★☆ `快速修复` `"ctrl+shift+."` `editor.action.quickFix`
 - ★★★☆☆ `搜索编辑器: 选择所有匹配项` `"shift+alt+d"` `selectAllSearchEditorMatches`
 - ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"` `addCursorsAtSearchResults`
