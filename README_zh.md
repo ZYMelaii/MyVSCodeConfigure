@@ -58,7 +58,47 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 # @brief configuration details for clangd
 ###
 CompileFlags:
-    Add: -std=c++20         # 启用C++20标准
+    Add: -std=c++2b         # 启用C++23标准
 Diagnostics:
     UnusedIncludes: Strict  # 标记未被使用的头文件
 ```
+
+### Snippet配置（个人偏好）
+- [C片段](./config/c.json)
+- [C++片段](./config/cpp.json)
+
+### 快捷键绑定（个人偏好）
+#### `重新绑定的命令`
+- ★★★★★ `切换块注释` `"ctrl+shift+/"` `editor.action.blockComment`
+- ★★★★★ `在行尾添加光标` `"ctrl+shift+l"` `editor.action.insertCursorAtEndOfEachLineSelected`
+- ★★★★★ `选择所有找到的查找匹配项` `"shift+alt+d"` `editor.action.selectHighlights`
+- ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."` `breadcrumbs.focusAndSelec`
+- ★★★★★ `向上移动行` `"ctrl+shift+up"` `editor.action.moveLinesUpAction`
+- ★★★★★ `向下移动行` `"ctrl+shift+down"` `editor.action.moveLinesDownAction`
+- ★★★★☆ `快速修复` `"ctrl+shift+."` `editor.action.quickFix`
+- ★★★☆☆ `搜索编辑器: 选择所有匹配项` `"shift+alt+d"` `selectAllSearchEditorMatches`
+- ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"` `addCursorsAtSearchResults`
+#### `删除的命令`
+- notebook.cell.detectLanguage
+- editor.action.formatSelection
+- editor.detectLanguage
+- editor.action.toggleTabFocusMode
+- editor.toggleFold
+- editor.action.removeCommentLine
+- editor.action.inPlaceReplace.up
+- workbench.action.files.saveWithoutFormatting
+- editor.action.copyLinesUpAction
+- editor.action.copyLinesDownAction
+- editor.action.insertCursorAbove
+- editor.action.insertCursorBelow
+- editor.action.autoFix
+- clangd.typeHierarchy
+- breadcrumbs.toggleToOn
+- cursorColumnSelectDown
+- cursorColumnSelectLeft
+- cursorColumnSelectPageDown
+- cursorColumnSelectPageUp
+- cursorColumnSelectRight
+- cursorColumnSelectUp
+- problems.action.showQuickFixes
+- workbench.action.openSettings

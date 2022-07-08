@@ -1,0 +1,63 @@
+{
+	"Default program entry": {
+		"prefix": "main",
+		"body": [
+			"int main(int argc, char *argv[]) {",
+			"\t${1:// TODO}",
+			"\treturn 0;",
+			"}",
+		],
+		"description": "quick program entry `main`",
+	},
+	"Win32 program entry": {
+		"prefix": "winmain",
+		"body": [
+			"#include <windows.h>\n",
+			"int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pCmdLine, int nCmdShow) {",
+			"\t${1:// TODO}",
+			"\treturn 0;",
+			"}",
+		],
+		"description": "quick program entry `WinMain`",
+	},
+	"Dll program entry": {
+		"prefix": "dllmain",
+		"body": [
+            "#include <windows.h>\n",
+            "BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved) {",
+            "\tswitch (fdwReason) {",
+            "\t\t//! Initialize once for each new process, return FALSE to fail DLL load.",
+            "\t\tcase DLL_PROCESS_ATTACH: {",
+            "\t\t\t${1:// TODO}",
+            "\t\t\tbreak;",
+            "\t\t}",
+            "\t\t//! Do thread-specific initialization.",
+            "\t\tcase DLL_THREAD_ATTACH: {",
+            "\t\t\t${2:// TODO}",
+            "\t\t\tbreak;",
+            "\t\t}",
+            "\t\t//! Do thread-specific cleanup.",
+            "\t\tcase DLL_THREAD_DETACH: {",
+            "\t\t\t${3:// TODO}",
+            "\t\t}",
+            "\t\t//! Perform any necessary cleanup.",
+            "\t\tcase DLL_PROCESS_DETACH: {",
+            "\t\t\t${4:// TODO}",
+            "\t\t\tbreak;",
+            "\t\t}",
+            "\t}",
+            "\treturn TRUE;",
+            "}",
+		],
+		"description": "quick program entry `DllMain`",
+	},
+	"Trivial for-statement": {
+		"prefix": "for",
+		"body": [
+			"for (int ${1:i} = ${2:0}; ${1:i} < ${3:n}; ++${1:i}) {",
+			"\t${4:// TODO}",
+			"}",
+		],
+		"description": "ordinary for statement"
+	},
+}
