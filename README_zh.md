@@ -43,9 +43,10 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 - ★★★★★ `breadcrumbs.focusAndSelect` `"ctrl+shift+."` `breadcrumbs.focusAndSelect`
 - ★★★★★ `向上移动行` `"ctrl+shift+up"` `editor.action.moveLinesUpAction`
 - ★★★★★ `向下移动行` `"ctrl+shift+down"` `editor.action.moveLinesDownAction`
+- ★★★★☆ `快速修复` `"ctrl+shift+."` `editor.action.quickFix`
+- ★★★★☆ `转到括号` `"ctrl+m"` `editor.action.jumpToBracket`
 - ★★★★☆ `转换为大写` `"ctrl+k ctrl+u"` `editor.action.transformToUppercase`
 - ★★★★☆ `转换为小写` `"ctrl+k ctrl+l"` `editor.action.transformToLowercase`
-- ★★★★☆ `快速修复` `"ctrl+shift+."` `editor.action.quickFix`
 - ★★★★☆ `视图: 切换主侧栏可见性` `"ctrl+alt+b"` `workbench.action.toggleSidebarVisibility`
 - ★★★☆☆ `搜索编辑器: 选择所有匹配项` `"shift+alt+d"` `selectAllSearchEditorMatches`
 - ★★★☆☆ `addCursorsAtSearchResults` `"shift+alt+d"` `addCursorsAtSearchResults`
@@ -80,6 +81,7 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
 - `在下面插入行` `"ctrl+enter"` `editor.action.insertLineAfter`
 - `在上面插入行` `ctrl+shift+enter` `editor.action.insertLineBefore`
 - `格式化文档` `"shift+alt+f"` `editor.action.formatDocument`
+- `clangd: Switch Between Source/Header` `"alt+o"` `clangd.switchheadersource`
 - `更改语言模式` `"ctrl+k m"` `workbench.action.editor.changeLanguageMode`
 - `视图: 切换面板可见性` `"ctrl+j"` `workbench.action.togglePanel`
 - `视图: 切换 终端` `"ctrl+backtick"` `workbench.action.terminal.toggleTerminal`
