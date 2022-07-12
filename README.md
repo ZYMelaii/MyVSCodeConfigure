@@ -7,7 +7,7 @@
 Download an appropriate version of VSCode and setup for yourself. <br>
 PS: replace official download server `az764295.vo.msecnd.net` (or anything else appeared in your download link) to `vscode.cdn.azure.cn` to speed up your download procedure. `[optional]`
 
-### Recommended Extensions Installation
+### Recommended Extensions Installation (independent extension plugins can be remove)
 1. `Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code` <br>
     **brief** Language pack extension for Chinese (Simplified)
 2. `Error Lens` <br>
@@ -20,6 +20,8 @@ PS: replace official download server `az764295.vo.msecnd.net` (or anything else 
     **brief** CMake language with extension support
 6. `Bookmarks` <br>
     **brief** Mark lines and jump to them
+7. `Pylance` <br>
+    **brief** A performant, feature-rich language server for Python in VS Code
 
 ### Git Configure
 1. Install `Git` for yourself.

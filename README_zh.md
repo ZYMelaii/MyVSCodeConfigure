@@ -7,7 +7,7 @@
 从VSCode官网下载一个合适的版本并按步骤安装。 <br>
 PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段（如`az764295.vo.msecnd.net`）替换为`vscode.cdn.azure.cn`（国内云服务器）来加速下载。
 
-### 推荐安装的插件
+### 推荐安装的插件（安装时附带的拓展包若非依赖项皆可卸载）
 1. `Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code` <br>
     **简介** VSCode简体中文语言拓展包
 2. `Error Lens` <br>
@@ -20,6 +20,8 @@ PS: 国内用户如果下载速度太慢，可以将下载链接中的域名段�
     **简介** CMake支持及其拓展
 6. `Bookmarks` <br>
     **简介** 书签标记及跳转支持
+7. `Pylance` <br>
+    **简介** 用于Python的LSP服务器Pylance的VSCode支持插件
 
 ### Git配置
 1. 安装Git。
